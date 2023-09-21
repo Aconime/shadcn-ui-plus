@@ -1,1 +1,1 @@
-"# shadcn-ui-plus" 
+# shadcn-ui-plus
