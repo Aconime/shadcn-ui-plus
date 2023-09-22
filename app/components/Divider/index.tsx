@@ -1,6 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 
-const index = ({ vertical = false }) => {
+interface DividerProps {
+  vertical?: boolean;
+}
+
+const Divider: FC<DividerProps> = ({ vertical = false }) => {
   const baseStyles = "bg-gray-200";
   const horizontalStyles = "h-px w-full";
   const verticalStyles = "w-px h-full";
@@ -12,4 +16,4 @@ const index = ({ vertical = false }) => {
   return <div className={styles}></div>;
 };
 
-export default index;
+export default Divider;
